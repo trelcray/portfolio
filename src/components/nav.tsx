@@ -14,7 +14,7 @@ export const Nav = () => {
       className="fixed inset-y-0 z-50 mt-auto flex h-max w-full flex-col items-center 
       gap-y-4 xl:right-2 xl:h-screen xl:w-16 xl:max-w-md xl:justify-center"
     >
-      <ul
+      <div
         className="flex h-[5rem] w-full items-center justify-between gap-y-10
        bg-white/10 px-4 py-8 text-3xl backdrop-blur-sm md:px-40 xl:h-max 
        xl:flex-col xl:justify-center xl:rounded-full xl:px-0 xl:text-xl"
@@ -28,6 +28,7 @@ export const Nav = () => {
               )}
               key={i}
               href={link.path}
+              aria-label={link.label}
             >
               <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
                 <div className="relative flex items-center rounded-[0.188rem] bg-white p-[0.375rem] text-primary">
@@ -40,11 +41,11 @@ export const Nav = () => {
                   />
                 </div>
               </div>
-              <li>{link.icon}</li>
+              <div>{link.icon}</div>
             </Link>
           );
         })}
-      </ul>
+      </div>
     </nav>
   );
 };

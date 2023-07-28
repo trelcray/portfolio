@@ -8,7 +8,7 @@ import { fadeIn } from "@/utils/variants";
 
 export default function Testimonials() {
   return (
-    <PageWrapper className="bg-primary/30 py-32 text-center xl:py-5">
+    <PageWrapper className="bg-primary/30 text-center xl:py-5">
       <div className="container mx-auto flex h-full flex-col justify-center">
         <motion.h2
           variants={fadeIn("up", 0.2)}

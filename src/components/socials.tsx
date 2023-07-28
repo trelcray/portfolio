@@ -8,6 +8,7 @@ export const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="transition-colors duration-300 hover:text-accent"
+        aria-label="instagram icon link"
       >
         <RiInstagramLine />
       </a>
@@ -16,6 +17,7 @@ export const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="transition-colors duration-300 hover:text-accent"
+        aria-label="github icon link"
       >
         <RiGithubLine />
       </a>
@@ -24,6 +26,7 @@ export const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="transition-colors duration-300 hover:text-accent"
+        aria-label="linkedin icon link"
       >
         <RiLinkedinLine />
       </a>

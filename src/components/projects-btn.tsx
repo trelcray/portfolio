@@ -13,8 +13,8 @@ export const ProjectsBtn = () => {
     >
       <Image
         src="/rounded-text.png"
-        width={0}
-        height={0}
+        width={141}
+        height={148}
         quality={100}
         sizes="100vw"
         className="h-auto max-h-[9.25rem] w-full max-w-[8.813rem] 

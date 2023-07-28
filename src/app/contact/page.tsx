@@ -63,7 +63,7 @@ export default function Contact() {
   };
 
   return (
-    <PageWrapper className="bg-primary/30 py-32 xl:py-10 ">
+    <PageWrapper className="bg-primary/30">
       <div
         className="container mx-auto flex h-full items-center justify-center 
         text-center xl:text-left"

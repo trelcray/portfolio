@@ -14,15 +14,35 @@ const sora = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
+const urlShare = "https://thaliszambarda.vercel.app";
+const titleShare = "Portfolio";
+const descriptionShare =
+  "Explore my portfolio and discover how my skills turn complexity into simplicity";
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description:
-    "Explore my portfolio and discover how my skills turn complexity into simplicity",
+  title: titleShare,
+  description: descriptionShare,
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
   },
+  openGraph: {
+    title: titleShare,
+    description: descriptionShare,
+    url: urlShare,
+    siteName: titleShare,
+    images: [
+      {
+        url: `${urlShare}/opengraph-image.png`,
+        width: 800,
+        height: 546,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  metadataBase: new URL(urlShare),
 };
 
 export default function RootLayout({
@@ -31,10 +51,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-US" suppressHydrationWarning>
       <body
         className={cn(
-          "relative bg-site bg-cover bg-no-repeat font-sora text-white",
+          "relative bg-site bg-cover bg-repeat font-sora text-white",
           sora.variable
         )}
       >

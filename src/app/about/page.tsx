@@ -15,7 +15,7 @@ import { fadeIn } from "@/utils/variants";
 export default function About() {
   const [index, setIndex] = useState(0);
   return (
-    <PageWrapper className="bg-primary/30 text-center xl:text-left">
+    <PageWrapper className="bg-primary/10 text-center xl:text-left">
       <Circles />
 
       <motion.div
@@ -114,7 +114,7 @@ export default function About() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex h-[30rem] w-full flex-col xl:max-w-[40%]"
+          className="flex h-[32rem] w-full flex-col xl:max-w-[40%]"
         >
           <div className="mx-auto mb-4 flex gap-x-4 xl:mx-0 xl:gap-x-8">
             {aboutData.map((item, i) => {
@@ -135,8 +135,8 @@ export default function About() {
             })}
           </div>
           <div
-            className="flex flex-col items-center gap-y-2 py-2 xl:items-start 
-            xl:gap-y-4 xl:py-6"
+            className="flex h-full flex-col items-center gap-y-2 overflow-y-scroll
+            py-2 md:overflow-hidden xl:items-start xl:gap-y-4 xl:py-6"
           >
             {aboutData[index].info.map((item, i) => {
               return (

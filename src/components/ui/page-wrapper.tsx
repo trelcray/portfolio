@@ -16,7 +16,8 @@ export const PageWrapper: FC<IPageWrapperProps> = ({ children, className }) => {
   return (
     <main
       className={cn(
-        "flex min-h-screen items-center justify-center bg-primary/60",
+        "flex h-full min-h-screen w-full items-center justify-center",
+        "bg-primary/60 py-32 lg:py-0 lg:pb-2 lg:pt-10",
         className
       )}
     >

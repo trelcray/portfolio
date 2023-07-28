@@ -10,7 +10,7 @@ import { fadeIn } from "@/utils/variants";
 
 export default function Work() {
   return (
-    <PageWrapper className="bg-primary/30 py-36 md:py-32 xl:py-0">
+    <PageWrapper className="bg-primary/30">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col gap-x-8 xl:flex-row">
@@ -40,9 +40,7 @@ export default function Work() {
               into pixel-perfect designs, ensuring a seamless and engaging user
               experience. Explore my creations to witness a collection of
               diverse projects, where each site tells a unique story through
-              stunning visuals and intuitive interfaces. Let's collaborate to
-              elevate your online presence and bring your digital vision to
-              life!
+              stunning visuals and intuitive interfaces.
             </motion.p>
           </div>
           <motion.div
