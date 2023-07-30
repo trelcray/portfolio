@@ -3,8 +3,8 @@ import Image from "next/image";
 export const Circles = () => {
   return (
     <picture
-      className="duration-[2000ms] pointer-events-none absolute -right-16 bottom-0 z-10
-      hidden w-[12.5rem] animate-pulse mix-blend-color-dodge lg:flex 
+      className="pointer-events-none absolute -right-16 bottom-0 z-10 hidden
+      w-[12.5rem] animate-pulse mix-blend-color-dodge duration-2000 lg:flex 
       xl:w-[18.75rem]"
     >
       <Image

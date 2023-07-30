@@ -34,6 +34,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 6s linear infinite",
       },
+      transitionDuration: {
+        2000: "2000ms",
+      },
       fontFamily: {
         sora: ["var(--font-sora)", ...fontFamily.sans],
       },
