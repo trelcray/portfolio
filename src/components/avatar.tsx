@@ -1,9 +1,17 @@
+import { FC } from "react";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import avatar from "@/assets/avatar.png";
+import { cn } from "@/utils/cn";
 import { fadeIn } from "@/utils/variants";
 
-export const Avatar = () => {
+interface IAvatarProps {
+  isAbout?: boolean;
+}
+
+export const Avatar: FC<IAvatarProps> = ({ isAbout }) => {
   return (
     <motion.picture
       variants={fadeIn("up", 0.5)}
@@ -11,16 +19,20 @@ export const Avatar = () => {
       animate="show"
       exit="hidden"
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="pointer-events-none absolute bottom-0 right-20 hidden xl:flex"
+      className={cn(
+        "pointer-events-none absolute bottom-0 right-20 hidden xl:flex",
+        isAbout === true && "-bottom-32 -left-48 right-auto 2xl:-left-56"
+      )}
     >
       <Image
-        src="/avatar.png"
+        src={avatar}
         width={737}
         height={720}
         quality={100}
-        sizes="(max-width: 737px) 100vw)"
+        sizes="(max-width: 737px) 100vw"
         className="translate-z-0 h-auto w-auto"
         alt="Avatar of adult man in glasses, with big beard and blue eyes"
+        priority
       />
     </motion.picture>
   );

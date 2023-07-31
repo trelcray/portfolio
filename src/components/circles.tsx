@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import circles from "@/assets/circles.png";
+
 export const Circles = () => {
   return (
     <picture
@@ -9,12 +11,12 @@ export const Circles = () => {
       xl:w-[18.75rem] 2xl:-bottom-6 2xl:-right-16"
     >
       <Image
-        src="/circles.png"
+        src={circles}
         width={260}
         height={200}
-        sizes="100vw"
+        sizes="(max-width: 260px) 100vw"
         quality={100}
-        className="h-auto w-full"
+        className="h-auto w-auto"
         alt="one circles image"
       />
     </picture>

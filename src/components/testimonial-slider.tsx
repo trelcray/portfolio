@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { testimonialData } from "@/mocks/testimonial-data";
+import testimonialData from "@/mocks/testimonial-data.json";
 
 export const TestimonialSlider = () => {
   return (

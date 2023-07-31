@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { z } from "zod";
 
+import { Button } from "@/components/ui/button";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { toast } from "@/hooks/use-toasts";
 import { sendContactForm } from "@/lib/api";
@@ -143,8 +144,10 @@ export default function Contact() {
                 </span>
               )}
             </fieldset>
-            <button
+            <Button
               disabled={isSubmitting}
+              isLoading={isSubmitting}
+              variant="outline"
               type="submit"
               className="btn group flex max-w-[10.625rem] items-center 
               justify-center overflow-hidden rounded-full border
@@ -162,7 +165,7 @@ export default function Contact() {
                 opacity-0 transition-all duration-300 group-hover:flex
                 group-hover:-translate-y-0 group-hover:opacity-100"
               />
-            </button>
+            </Button>
           </motion.form>
         </div>
       </div>

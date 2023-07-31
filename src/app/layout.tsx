@@ -28,6 +28,13 @@ export const metadata: Metadata = {
     "Software Developer",
     "Frontend Developer",
   ],
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  metadataBase: new URL(siteConfig.url),
   authors: [
     {
       name: "trelcray",
@@ -43,19 +50,22 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [
+      { url: "/og.png", width: 800, height: 600, alt: "Image from website" },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/og.png`],
+    images: [{ url: "/og.png", width: 800, height: 600 }],
     creator: "@thaliszambarda",
   },
   icons: {
     icon: "/icon.svg",
     apple: "/apple-touch-icon.svg",
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

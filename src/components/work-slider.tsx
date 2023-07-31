@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { workSlides } from "@/mocks/work-slides";
+import workSlides from "@/mocks/work-slides.json";
 
 export const WorkSlider = () => {
   return (

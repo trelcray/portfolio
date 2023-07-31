@@ -1,14 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import CountUp from "react-countup";
 
 import { motion } from "framer-motion";
 
 import { Avatar } from "@/components/avatar";
 import { Circles } from "@/components/circles";
+import { Expertise } from "@/components/expertise";
+import {
+  Tooltip,
+  TooltipArrow,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/Tooltip";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { aboutData } from "@/mocks/about-data";
+import expertise from "@/mocks/expertise-data.json";
 import { cn } from "@/utils/cn";
 import { fadeIn } from "@/utils/variants";
 
@@ -17,16 +25,7 @@ export default function About() {
   return (
     <PageWrapper className="bg-primary/10 text-center xl:text-left">
       <Circles />
-
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="absolute -left-64 bottom-0 z-0 hidden xl:flex"
-      >
-        <Avatar />
-      </motion.div>
+      <Avatar isAbout />
       <div
         className="container mx-auto mt-28 flex h-full flex-col items-center 
         justify-center gap-x-6 pt-2 xl:mt-0 xl:flex-row"
@@ -66,74 +65,9 @@ export default function About() {
             xl:max-w-none"
           >
             <div className="flex flex-1 md:gap-x-6">
-              <div
-                className="relative flex-1 after:absolute after:right-0 
-                after:top-0 after:h-full after:w-[0.063rem] after:bg-white/10"
-              >
-                <div
-                  className="mb-2 text-2xl font-extrabold text-accent 
-                  xl:text-4xl 2xl:text-5xl"
-                >
-                  <CountUp start={0} end={3} duration={5} /> +
-                </div>
-                <span
-                  className="flex max-w-[6.25rem] text-xs uppercase 
-                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
-                >
-                  Years of experience
-                </span>
-              </div>
-
-              <div
-                className="relative flex-1 after:absolute after:right-0 
-                after:top-0 after:h-full after:w-[0.063rem] after:bg-white/10"
-              >
-                <div
-                  className="mb-2 text-2xl font-extrabold text-accent 
-                  xl:text-4xl 2xl:text-5xl"
-                >
-                  <CountUp start={0} end={2} duration={5} /> +
-                </div>
-                <span
-                  className="flex max-w-[6.25rem] text-xs uppercase 
-                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
-                >
-                  Satisfied clients
-                </span>
-              </div>
-
-              <div
-                className="relative flex-1 after:absolute after:right-0 
-                after:top-0 after:h-full after:w-[0.063rem] after:bg-white/10"
-              >
-                <div
-                  className="mb-2 text-2xl font-extrabold text-accent 
-                  xl:text-4xl 2xl:text-5xl"
-                >
-                  <CountUp start={0} end={2} duration={5} /> +
-                </div>
-                <span
-                  className="flex max-w-[6.25rem] text-xs uppercase 
-                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
-                >
-                  Finished Projects
-                </span>
-              </div>
-
-              <div className="relative flex-1">
-                <div
-                  className="mb-2 text-2xl font-extrabold text-accent 
-                  xl:text-4xl 2xl:text-5xl"
-                >
-                  <CountUp start={0} end={1} duration={5} /> +
-                </div>
-                <span
-                  className="flex max-w-[6.25rem] text-xs uppercase 
-                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
-                >
-                  Winning Awards
-                </span>
-              </div>
+              {expertise.map((item, i) => (
+                <Expertise key={i} end={item.end} title={item.title} />
+              ))}
             </div>
           </motion.div>
         </div>
@@ -196,9 +130,23 @@ export default function About() {
                   <span className="flex gap-x-4">
                     {item.icons?.map((icon, i) => {
                       return (
-                        <i className="text-2xl text-white 2xl:text-3xl" key={i}>
-                          {icon}
-                        </i>
+                        <TooltipProvider key={i}>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <i
+                                className="cursor-help text-2xl text-white 
+                                2xl:text-3xl"
+                                key={i}
+                              >
+                                {icon.icon}
+                              </i>
+                            </TooltipTrigger>
+                            <TooltipContent side="bottom">
+                              {icon.title}
+                              <TooltipArrow className="fill-gray-100 shadow-md" />
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
                       );
                     })}
                   </span>
