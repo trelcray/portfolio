@@ -51,14 +51,26 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
-      { url: "/og.png", width: 800, height: 600, alt: "Image from website" },
+      {
+        url: siteConfig.ogImage,
+        width: 800,
+        height: 600,
+        alt: "Image from website",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [{ url: "/og.png", width: 800, height: 600 }],
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 800,
+        height: 600,
+        alt: "Image from index of website",
+      },
+    ],
     creator: "@thaliszambarda",
   },
   icons: {

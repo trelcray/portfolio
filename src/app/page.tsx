@@ -55,7 +55,10 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 right-0 h-full w-[75rem] overflow-hidden">
+      <div
+        className="absolute bottom-0 right-0 h-full w-[75rem] overflow-hidden
+        2xl:w-[90rem]"
+      >
         <div
           className="translate-z-0 absolute h-full w-full bg-none 
           mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right 
