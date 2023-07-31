@@ -16,7 +16,8 @@ export const WorkSlider = () => {
       spaceBetween={10}
       pagination={{ clickable: true }}
       modules={[Pagination]}
-      className="h-[65vw] sm:h-[26rem] md:h-[30rem] lg:h-[36rem] xl:h-[30rem]"
+      className="h-[65vw] sm:h-[26rem] md:h-[30rem] lg:h-[36rem] xl:h-[30rem] 
+      2xl:h-[36rem]"
     >
       {workSlides.slides.map((slide, i) => {
         return (

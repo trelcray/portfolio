@@ -11,8 +11,9 @@ export const Nav = () => {
 
   return (
     <nav
-      className="fixed inset-y-0 z-50 mt-auto flex h-max w-full flex-col items-center 
-      gap-y-4 xl:right-2 xl:h-screen xl:w-16 xl:max-w-md xl:justify-center"
+      className="fixed bottom-0 z-50 flex h-max w-full flex-col items-center 
+      gap-y-4 xl:right-2 xl:h-screen xl:w-16 xl:max-w-md xl:justify-center 
+      2xl:right-4 2xl:w-20"
     >
       <div
         className="flex h-[5rem] w-full items-center justify-between gap-y-10
@@ -23,25 +24,36 @@ export const Nav = () => {
           return (
             <Link
               className={cn(
-                "group relative flex items-center transition-all duration-300 hover:text-accent",
+                "group relative flex items-center transition-all duration-300",
+                "hover:text-accent",
                 link.path === pathname && "text-accent"
               )}
               key={i}
               href={link.path}
               aria-label={link.label}
             >
-              <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
-                <div className="relative flex items-center rounded-[0.188rem] bg-white p-[0.375rem] text-primary">
-                  <span className="text-[0.75rem] font-semibold capitalize leading-none">
+              <div
+                className="absolute right-0 hidden pr-14 
+                xl:group-hover:flex"
+              >
+                <div
+                  className="relative flex items-center rounded-[0.188rem]
+                  bg-white p-[0.375rem] text-primary"
+                >
+                  <span
+                    className="text-xs font-semibold capitalize leading-none 
+                    2xl:text-sm"
+                  >
                     {link.name}
                   </span>
                   <div
                     className="absolute -right-2 border-y-[0.375rem] border-l-8 
-                  border-r-0 border-solid border-y-transparent border-l-white"
+                    border-r-0 border-solid border-y-transparent 
+                    border-l-white"
                   />
                 </div>
               </div>
-              <div>{link.icon}</div>
+              <i className="2xl:text-3xl">{link.icon}</i>
             </Link>
           );
         })}

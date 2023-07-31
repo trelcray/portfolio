@@ -14,7 +14,7 @@ export const Header = () => {
           md:flex-row"
         >
           <Link href="/">
-            <p className="text-3xl font-extralight text-white">
+            <p className="text-3xl font-extralight text-white 2xl:text-5xl">
               <strong className="font-extrabold">Thalis</strong> Zambarda
               <span className="font-light text-accent">.</span>
             </p>

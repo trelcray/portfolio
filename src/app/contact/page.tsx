@@ -146,9 +146,10 @@ export default function Contact() {
             <button
               disabled={isSubmitting}
               type="submit"
-              className="btn group flex max-w-[10.625rem] items-center justify-center
-              overflow-hidden rounded-full border border-white/50 px-8 
-              transition-all duration-300 hover:border-accent"
+              className="btn group flex max-w-[10.625rem] items-center 
+              justify-center overflow-hidden rounded-full border
+              border-white/50 px-8 transition-all duration-300 
+              hover:border-accent"
             >
               <span
                 className="transition-all duration-500 

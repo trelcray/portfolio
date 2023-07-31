@@ -9,7 +9,7 @@ export const ProjectsBtn = () => {
       href="/work"
       className="group relative z-10 flex h-[11.563rem] w-[11.563rem]
         items-center justify-center bg-circleStar bg-cover bg-center 
-        bg-no-repeat"
+        bg-no-repeat p-5 2xl:h-48 2xl:w-48"
     >
       <Image
         src="/rounded-text.png"
@@ -17,8 +17,7 @@ export const ProjectsBtn = () => {
         height={148}
         quality={100}
         sizes="100vw"
-        className="h-auto max-h-[9.25rem] w-full max-w-[8.813rem] 
-        animate-spin-slow "
+        className="h-auto w-full animate-spin-slow"
         alt="rounded text image"
       />
       <HiArrowRight

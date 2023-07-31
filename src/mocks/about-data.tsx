@@ -54,7 +54,7 @@ export const aboutData: IAboutDataprops[] = [
         icons: [<SiJavascript key="js" />, <SiTypescript key="ts" />],
       },
       {
-        title: "Front-end Web Development",
+        title: "Front-end Development",
         icons: [
           <FaReact key="react" />,
           <SiNextdotjs key="next" />,
@@ -67,7 +67,7 @@ export const aboutData: IAboutDataprops[] = [
         ],
       },
       {
-        title: "Back-end Web Development",
+        title: "Back-end Development",
         icons: [
           <FaNodeJs key="node" />,
           <SiMongodb key="mongodb" />,

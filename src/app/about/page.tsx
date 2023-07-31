@@ -31,7 +31,10 @@ export default function About() {
         className="container mx-auto mt-28 flex h-full flex-col items-center 
         justify-center gap-x-6 pt-2 xl:mt-0 xl:flex-row"
       >
-        <div className="flex h-full flex-col items-center justify-center text-start">
+        <div
+          className="flex h-full flex-col items-center justify-center 
+          text-start 2xl:gap-y-3"
+        >
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -47,7 +50,8 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="mx-auto mb-6 max-w-[31.25rem] px-2 xl:mx-0 xl:mb-12 xl:px-0"
+            className="mx-auto mb-6 max-w-[31.25rem] px-2 xl:mx-0 xl:mb-12 
+            xl:px-0"
           >
             3 years ago, I began my journey as a developer. Since then, I've
             done remote work for company, developed for startups, and
@@ -58,50 +62,75 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="mx-auto mb-8 hidden md:flex md:max-w-xl xl:mb-0 xl:max-w-none"
+            className="mx-auto mb-8 hidden md:flex md:max-w-xl xl:mb-0 
+            xl:max-w-none"
           >
             <div className="flex flex-1 md:gap-x-6">
               <div
-                className="relative flex-1 after:absolute after:right-0 after:top-0
-            after:h-full after:w-[0.063rem] after:bg-white/10"
+                className="relative flex-1 after:absolute after:right-0 
+                after:top-0 after:h-full after:w-[0.063rem] after:bg-white/10"
               >
-                <div className="mb-2 text-2xl font-extrabold text-accent xl:text-4xl">
+                <div
+                  className="mb-2 text-2xl font-extrabold text-accent 
+                  xl:text-4xl 2xl:text-5xl"
+                >
                   <CountUp start={0} end={3} duration={5} /> +
                 </div>
-                <span className="flex max-w-[6.25rem] text-xs uppercase leading-[1.4] tracking-[0.063rem]">
+                <span
+                  className="flex max-w-[6.25rem] text-xs uppercase 
+                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
+                >
                   Years of experience
                 </span>
               </div>
 
               <div
-                className="relative flex-1 after:absolute after:right-0 after:top-0
-            after:h-full after:w-[0.063rem] after:bg-white/10"
+                className="relative flex-1 after:absolute after:right-0 
+                after:top-0 after:h-full after:w-[0.063rem] after:bg-white/10"
               >
-                <div className="mb-2 text-2xl font-extrabold text-accent xl:text-4xl">
+                <div
+                  className="mb-2 text-2xl font-extrabold text-accent 
+                  xl:text-4xl 2xl:text-5xl"
+                >
                   <CountUp start={0} end={2} duration={5} /> +
                 </div>
-                <span className="flex max-w-[6.25rem] text-xs uppercase leading-[1.4] tracking-[0.063rem]">
+                <span
+                  className="flex max-w-[6.25rem] text-xs uppercase 
+                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
+                >
                   Satisfied clients
                 </span>
               </div>
 
               <div
-                className="relative flex-1 after:absolute after:right-0 after:top-0
-            after:h-full after:w-[0.063rem] after:bg-white/10"
+                className="relative flex-1 after:absolute after:right-0 
+                after:top-0 after:h-full after:w-[0.063rem] after:bg-white/10"
               >
-                <div className="mb-2 text-2xl font-extrabold text-accent xl:text-4xl">
+                <div
+                  className="mb-2 text-2xl font-extrabold text-accent 
+                  xl:text-4xl 2xl:text-5xl"
+                >
                   <CountUp start={0} end={2} duration={5} /> +
                 </div>
-                <span className="flex max-w-[6.25rem] text-xs uppercase leading-[1.4] tracking-[0.063rem]">
+                <span
+                  className="flex max-w-[6.25rem] text-xs uppercase 
+                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
+                >
                   Finished Projects
                 </span>
               </div>
 
               <div className="relative flex-1">
-                <div className="mb-2 text-2xl font-extrabold text-accent xl:text-4xl">
+                <div
+                  className="mb-2 text-2xl font-extrabold text-accent 
+                  xl:text-4xl 2xl:text-5xl"
+                >
                   <CountUp start={0} end={1} duration={5} /> +
                 </div>
-                <span className="flex max-w-[6.25rem] text-xs uppercase leading-[1.4] tracking-[0.063rem]">
+                <span
+                  className="flex max-w-[6.25rem] text-xs uppercase 
+                  leading-[1.4] tracking-[0.063rem] 2xl:text-sm"
+                >
                   Winning Awards
                 </span>
               </div>
@@ -114,18 +143,24 @@ export default function About() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex h-[32rem] w-full flex-col xl:max-w-[40%]"
+          className="flex h-[32rem] w-full flex-col xl:max-w-[40%]
+          2xl:max-w-[42%]"
         >
-          <div className="mx-auto mb-4 flex gap-x-4 xl:mx-0 xl:gap-x-8">
+          <div
+            className="mx-auto mb-4 flex gap-x-3 sm:gap-x-4 xl:mx-0 xl:gap-x-8
+            2xl:gap-x-10"
+          >
             {aboutData.map((item, i) => {
               return (
                 <div
                   key={i}
                   className={cn(
-                    "relative cursor-pointer capitalize after:absolute xl:text-lg",
-                    "after:-bottom-1 after:left-0 after:h-[0.125rem] after:w-8 after:bg-white",
+                    "relative cursor-pointer capitalize after:absolute",
+                    "after:-bottom-1 after:left-0 md:text-lg 2xl:text-xl",
+                    "after:h-[0.125rem] after:w-8 after:bg-white",
                     index === i &&
-                      "text-accent duration-300 after:w-[100%] after:bg-accent after:transition-all"
+                      `text-accent duration-300 after:w-[100%]
+                      after:bg-accent after:transition-all`
                   )}
                   onClick={() => setIndex(i)}
                 >
@@ -135,30 +170,38 @@ export default function About() {
             })}
           </div>
           <div
-            className="flex h-full flex-col items-center gap-y-2 overflow-y-scroll
-            py-2 md:overflow-hidden xl:items-start xl:gap-y-4 xl:py-6"
+            className="flex h-full flex-col items-center gap-y-2
+            overflow-y-scroll py-2 text-center xl:items-start 
+            xl:gap-y-4 xl:py-6 xl:text-start"
           >
             {aboutData[index].info.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className="flex max-w-max flex-1 flex-col items-center gap-x-2
+                  className="flex max-w-max flex-col items-center gap-x-2
                   text-white/60 md:flex-row"
                 >
-                  <div className="mb-2 font-light md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <p className="mb-2 font-light md:mb-0 2xl:text-lg">
+                    {item.title}
+                  </p>
+                  <span className="hidden md:flex">-</span>
+                  <span
+                    className="flex w-full justify-center md:w-auto 
+                    md:justify-start"
+                  >
+                    {item.stage}
+                  </span>
                   {item.stage2 && <span>-</span>}
                   <span>{item.stage2}</span>
-                  <div className="flex gap-x-4">
+                  <span className="flex gap-x-4">
                     {item.icons?.map((icon, i) => {
                       return (
-                        <div className="text-2xl text-white" key={i}>
+                        <i className="text-2xl text-white 2xl:text-3xl" key={i}>
                           {icon}
-                        </div>
+                        </i>
                       );
                     })}
-                  </div>
+                  </span>
                 </div>
               );
             })}

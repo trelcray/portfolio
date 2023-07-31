@@ -3,9 +3,9 @@ import Image from "next/image";
 export const Bulb = () => {
   return (
     <picture
-      className="pointer-events-none absolute -bottom-12 -left-44 
-      z-10 hidden w-[12.5rem] rotate-90 animate-pulse mix-blend-color-dodge 
-      duration-2000 lg:flex xl:bottom-2 xl:w-[16.25rem] xl:rotate-3"
+      className="pointer-events-none absolute -bottom-28 -left-32 
+      z-10 hidden w-[12.5rem] rotate-45 animate-pulse mix-blend-color-dodge 
+      duration-2000 md:flex xl:-bottom-28 xl:w-[16.25rem]"
     >
       <Image
         src="/bulb.png"

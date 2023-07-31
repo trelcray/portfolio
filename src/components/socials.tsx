@@ -2,7 +2,7 @@ import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
 
 export const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center gap-x-5 text-lg xl:text-2xl">
       <a
         href="https://www.instagram.com/thaliszambarda/"
         target="_blank"

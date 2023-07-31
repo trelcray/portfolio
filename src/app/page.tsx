@@ -32,7 +32,8 @@ export default function Home() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="mx-auto mb-10 max-w-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
+          className="mx-auto mb-10 max-w-sm xl:mx-0 xl:mb-16 xl:max-w-xl 
+          2xl:max-w-2xl"
         >
           Welcome to my world as a front-end developer! With expertise in HTML,
           CSS, and JavaScript, I bring elegant and intuitive interfaces to life.
@@ -56,21 +57,12 @@ export default function Home() {
 
       <div className="absolute bottom-0 right-0 h-full w-[75rem] overflow-hidden">
         <div
-          className="translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge 
-          xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat"
+          className="translate-z-0 absolute h-full w-full bg-none 
+          mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right 
+          xl:bg-no-repeat"
         ></div>
 
-        <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="absolute -bottom-52 -right-20 h-full max-h-[42.375rem] w-full
-          max-w-[46.063rem]"
-        >
-          <Avatar />
-        </motion.div>
+        <Avatar />
       </div>
     </PageWrapper>
   );

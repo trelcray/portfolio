@@ -40,7 +40,10 @@ export const ServiceSlider = () => {
               <div className="mb-4 text-4xl text-accent">{item.icon}</div>
               <div className="mb-8">
                 <span className="mb-2 text-lg">{item.title}</span>
-                <p className="max-w-[21.875rem] leading-normal sm:min-h-[8rem] md:min-h-max lg:min-h-[5rem] xl:min-h-max">
+                <p
+                  className="max-w-[21.875rem] leading-normal sm:min-h-[8rem] 
+                  md:min-h-max lg:min-h-[5rem] xl:min-h-max"
+                >
                   {item.description}
                 </p>
               </div>

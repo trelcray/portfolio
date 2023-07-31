@@ -12,6 +12,7 @@ export default function Services() {
   return (
     <PageWrapper className="bg-primary/30 py-32 xl:px-10">
       <Circles />
+
       <div className="container mx-auto">
         <div className="flex flex-col gap-x-8 xl:flex-row">
           <div

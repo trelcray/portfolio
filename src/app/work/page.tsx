@@ -48,7 +48,7 @@ export default function Work() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%]"
+            className="w-full xl:max-w-[65%] 2xl:max-w-[60%]"
           >
             <WorkSlider />
           </motion.div>
