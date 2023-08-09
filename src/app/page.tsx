@@ -65,7 +65,7 @@ export default function Home() {
           xl:bg-no-repeat"
         ></div>
 
-        <Avatar />
+        <Avatar className="bottom-0 right-20" />
       </div>
     </PageWrapper>
   );

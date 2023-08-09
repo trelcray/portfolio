@@ -8,10 +8,10 @@ import { cn } from "@/utils/cn";
 import { fadeIn } from "@/utils/variants";
 
 interface IAvatarProps {
-  isAbout?: boolean;
+  className: string;
 }
 
-export const Avatar: FC<IAvatarProps> = ({ isAbout }) => {
+export const Avatar: FC<IAvatarProps> = ({ className }) => {
   return (
     <motion.picture
       variants={fadeIn("up", 0.5)}
@@ -19,10 +19,7 @@ export const Avatar: FC<IAvatarProps> = ({ isAbout }) => {
       animate="show"
       exit="hidden"
       transition={{ duration: 1, ease: "easeInOut" }}
-      className={cn(
-        "pointer-events-none absolute bottom-0 right-20 hidden xl:flex",
-        isAbout === true && "-bottom-32 -left-48 right-auto 2xl:-left-56"
-      )}
+      className={cn("pointer-events-none absolute hidden xl:flex", className)}
     >
       <Image
         src={avatar}

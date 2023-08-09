@@ -31,17 +31,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
     languages: {
-      "en-US": "/en-US",
+      "en-US": "/en",
     },
   },
-  metadataBase: new URL(siteConfig.url),
   authors: [
     {
-      name: "trelcray",
+      name: "thaliszambarda",
       url: siteConfig.url,
     },
   ],
-  creator: "trelcray",
+  creator: "thaliszambarda",
   themeColor: "black",
   openGraph: {
     type: "website",
@@ -50,34 +49,19 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 800,
-        height: 600,
-        alt: "Image from website",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 800,
-        height: 600,
-        alt: "Image from index of website",
-      },
-    ],
+    images: [siteConfig.ogImage],
     creator: "@thaliszambarda",
   },
   icons: {
     icon: "/icon.svg",
     apple: "/apple-touch-icon.svg",
   },
-  manifest: "/site.webmanifest",
+  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export default function RootLayout({
