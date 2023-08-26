@@ -23,19 +23,22 @@ export const WorkSlider = () => {
         return (
           <SwiperSlide key={i}>
             <div className="grid cursor-pointer grid-cols-2 grid-rows-2 gap-4">
-              {slide.images.map((image, i) => {
+              {slide.images.map((project, i) => {
                 return (
                   <div
                     key={i}
                     className="group relative flex items-center justify-center
                     overflow-hidden rounded-lg"
                   >
-                    <picture
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group relative flex items-center 
                       justify-center overflow-hidden"
                     >
                       <Image
-                        src={image.path}
+                        src={project.path}
                         width={500}
                         height={300}
                         quality={100}
@@ -75,7 +78,7 @@ export const WorkSlider = () => {
                           </div>
                         </div>
                       </div>
-                    </picture>
+                    </a>
                   </div>
                 );
               })}

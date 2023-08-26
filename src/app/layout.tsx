@@ -16,6 +16,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
@@ -28,12 +29,6 @@ export const metadata: Metadata = {
     "Software Developer",
     "Frontend Developer",
   ],
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en",
-    },
-  },
   authors: [
     {
       name: "thaliszambarda",
@@ -54,12 +49,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
-    creator: "@thaliszambarda",
+    creator: "@ThalisZambarda",
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-touch-icon.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
 };

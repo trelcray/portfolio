@@ -1,20 +1,14 @@
 [
   {
-    "image": "/t-avt-1.png",
-    "name": "Anne Smith",
+    "image": "/images/yuri.png",
+    "name": "Yuri Ramos",
     "position": "Customer",
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!"
+    "message": "Thalis é um excelente profissional que se destacou por sua dedicação e empenho. O projeto solicitado foi executado com notável perfeição, evidenciando a excelência dos serviços por ele prestados."
   },
   {
-    "image": "/t-avt-2.png",
-    "name": "Jane Doe",
-    "position": "Customer",
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!"
-  },
-  {
-    "image": "/t-avt-3.png",
-    "name": "Jhon Doe",
-    "position": "Customer",
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!"
+    "image": "/images/jenifer.png",
+    "name": "Jenifer Arispe",
+    "position": "Designer",
+    "message": "Colaborar com o Thalis em um projeto foi uma experiência extremamente positiva. Juntos, conseguimos transformar uma ideia abstrata em algo concreto e funcional. É um profissional que se destaca como um colega dedicado e comprometido, com uma motivação e paixão pela área que são admiráveis."
   }
 ]

@@ -26,9 +26,10 @@ export const Avatar: FC<IAvatarProps> = ({ className }) => {
         width={737}
         height={720}
         quality={100}
-        sizes="(max-width: 737px) 100vw"
-        className="translate-z-0 h-auto w-auto"
-        alt="Avatar of adult man in glasses, with big beard and blue eyes"
+        sizes="100vw"
+        className="translate-z-0 h-96 w-auto"
+        alt="Avatar of young adult man, with small beard and brown eyes"
+        priority
       />
     </motion.picture>
   );

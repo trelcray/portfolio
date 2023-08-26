@@ -25,7 +25,7 @@ export default function About() {
   return (
     <PageWrapper className="bg-primary/10 text-center xl:text-left">
       <Circles />
-      <Avatar className="-bottom-32 -left-48 2xl:-left-56" />
+      <Avatar className="-bottom-40 -left-56" />
       <div
         className="container mx-auto mt-28 flex h-full flex-col items-center 
         justify-center gap-x-6 pt-2 xl:mt-0 xl:flex-row"

@@ -4,39 +4,23 @@
       "images": [
         {
           "title": "title",
-          "path": "/thumb1.jpg"
+          "path": "/images/thumb1.png",
+          "url": "https://trelcray-airbnb-clone.vercel.app/"
         },
         {
           "title": "title",
-          "path": "/thumb2.jpg"
+          "path": "/images/thumb2.png",
+          "url": "https://www.zenosolucoes.com.br/"
         },
         {
           "title": "title",
-          "path": "/thumb3.jpg"
+          "path": "/images/thumb3.png",
+          "url": "https://landing-page-leadster-challenge.vercel.app/"
         },
         {
           "title": "title",
-          "path": "/thumb4.jpg"
-        }
-      ]
-    },
-    {
-      "images": [
-        {
-          "title": "title",
-          "path": "/thumb4.jpg"
-        },
-        {
-          "title": "title",
-          "path": "/thumb1.jpg"
-        },
-        {
-          "title": "title",
-          "path": "/thumb2.jpg"
-        },
-        {
-          "title": "title",
-          "path": "/thumb3.jpg"
+          "path": "/images/thumb4.png",
+          "url": "https://trelcray-github-io.vercel.app/"
         }
       ]
     }
